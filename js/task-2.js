@@ -1,3 +1,5 @@
+
+
 const images = [
   {
     url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
@@ -24,3 +26,28 @@ const images = [
     alt: "Lighthouse Coast Sea",
   }
 ];
+
+const gallery = document.querySelector('.gallery');
+
+images.forEach((image) => {
+const newItem = document.createElement('li');
+newItem.classList.add('gallery-item');
+
+  const newImg = document.createElement('img');
+  newImg.src = image.url;
+  newImg.alt = image.alt;
+newImg.classList.add('gallery-item-img');
+
+newItem.append(newImg);
+gallery.append(newItem);
+
+})
+
+
+
+
+
+
+
+
+
