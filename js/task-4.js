@@ -9,15 +9,15 @@ form.addEventListener("submit", (event) => {
     const userEmail = formData.get('email').trim();
     const userPassword = formData.get('password').trim();
     const infoObject = {
-        userEmail: '',
-        userPassword: ''
+        email: '',
+        password: ''
     }
 
     if (userEmail === "" || userPassword === "") {
         alert('All form fields must be filled in');
     } else {
-        infoObject.userEmail = userEmail;
-        infoObject.userPassword = userPassword;
+        infoObject.email = userEmail;
+        infoObject.password = userPassword;
         console.log(infoObject);
         form.reset();
     }
