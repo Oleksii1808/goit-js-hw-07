@@ -1,6 +1,4 @@
 const categories = document.querySelectorAll(".item");
-const categoryNames = document.querySelectorAll(".item-heading");
-const categoryElements = document.querySelectorAll(".item-list-point");
 
 const getTotalAmount = () => {
     let total = 0;
@@ -13,10 +11,11 @@ const getTotalAmount = () => {
 console.log(getTotalAmount());
 
 
+
 const getCategoryAndAmount = () => {
     for (const category of categories) {
-        const name = category.querySelector('.item-heading').textContent;
-        const amount = category.querySelectorAll(".item-list-point");
+        const name = category.querySelector('h2').textContent;
+        const amount = category.querySelectorAll("ul li");
 
         console.log(`Category: ${name}`);
         console.log(`Elements: ${amount.length}`);
