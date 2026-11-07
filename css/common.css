@@ -46,10 +46,8 @@ ol {
   gap: 8px;
 }
 
-.class-item-list-point {
-}
-
-.item-border-container {
+.item-list-point {
+  display: flex;
   padding: 8px 16px;
   border: 1px solid #808080;
   border-radius: 4px;

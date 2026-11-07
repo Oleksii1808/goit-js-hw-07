@@ -12,6 +12,7 @@ const getTotalAmount = () => {
 
 console.log(getTotalAmount());
 
+
 const getCategoryAndAmount = () => {
     for (const category of categories) {
         const name = category.querySelector('.item-heading').textContent;
